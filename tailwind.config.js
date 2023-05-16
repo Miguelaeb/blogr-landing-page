@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       borderRadius: {
         'bl-4xl': '0 0 0 8rem',
+        'bl-tr-4xl': '0 8rem 0 8rem',
+        'tr-4xl': '0 8rem 0 0',
       },
 
       colors:{

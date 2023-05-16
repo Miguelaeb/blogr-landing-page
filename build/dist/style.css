@@ -1,0 +1,7 @@
+.headerContainer {
+    background-image: url("../images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-repeat: no-repeat;
+    transform: scale(1rem);
+    background-position: 40% 40%;
+}

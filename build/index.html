@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./dist/output.css" />
-  <!-- <link rel="stylesheet" href="../build/dist/output.css" />
-  <link rel="stylesheet" href="../build/dist/style.css" /> -->
+  <!-- <link rel="stylesheet" href="./dist/output.css" /> -->
+  <!-- <link rel="stylesheet" href="../dist/style.css" /> -->
+  <link rel="stylesheet" href="../build/dist/output.css" />
+  <link rel="stylesheet" href="../build/dist/style.css" />
   
   <title>Frontend Mentor | Blogr landing page</title>
+
+  <!-- TODO Check the comments below that are in red -->
+  <!-- TODO Get done with the icon arrow of the navbar -->
+  <!-- TODO Star desktop design -->
 
 </head>
 <body>
 
-  <!-- TODO fix header section -->
-  <header class="headerContainer relative bg-gradient-to-r from-very-light-red-gradi to-light-red-gradi pt-5 pb-28 rounded-bl-4xl">
+  <header class="headerContainer relative pt-5 pb-28 rounded-bl-4xl">
     <nav class="relative z-10">
 			<div class="max-w-6xl mx-auto px-4">
 				<div class="flex justify-between">
@@ -77,7 +81,10 @@
 			<div class="hidden absolute left-0 right-0 w-11/12 m-auto py-4 rounded-lg bg-White mobile-menu text-center shadow-lg z-50">
         <ul class="">
             <li class="relative">
+              <div class="nameArrow flex justify-center items-center">
                 <a href="#" class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Product</a>
+                <img src="./images/icon-arrow-dark.svg" alt="" class="icon-arrow">
+              </div>
                 <ul class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
                   <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Overview</a></li>
                   <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Marketplace</a></li>
@@ -86,7 +93,10 @@
                 </ul>
             </li>
             <li class="relative">
+              <div class="nameArrow flex justify-center items-center">
                 <a href="#" class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Company</a>
+                <img src="./images/icon-arrow-dark.svg" alt="" class="icon-arrow">
+              </div>
                 <ul class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
                   <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">About Us</a></li>
                   <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Team</a></li>
@@ -95,7 +105,10 @@
                 </ul>
             </li>
             <li class="relative">
+              <div class="nameArrow flex justify-center items-center">
                 <a href="#" class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Connect</a>
+                <img src="./images/icon-arrow-dark.svg" alt="" class="icon-arrow">
+              </div>
                 <ul class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
                   <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Contact</a></li>
                   <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Newsletter</a></li>
@@ -112,12 +125,7 @@
     </div>
 		</nav>
 
-    <!-- <picture class="absolute left-56 bottom-12">
-      <source media="(min-width:768px)" srcset="./images/bg-pattern-intro-desktop.svg">
-      <img src="./images/bg-pattern-intro-mobile.svg" alt="" class="transform scale-800">
-    </picture> -->
-
-    <h1 class="headertitle text-center font-Overpass text-White font-semibold text-4xl px-6 mt-16 relative">A modern publishing platform</h1>
+    <h1 class="headertitle text-center font-Overpass text-White font-semibold text-4xl px-6 mt-28 relative">A modern publishing platform</h1>
     <p class="headerDescription text-center font-Overpass font-light text-White mt-5 text-lg mx-8 relative">Grow your audience and build your online brand</p>
 
     <div class="headerButton flex items-center justify-center mt-10 gap-4">
@@ -126,95 +134,101 @@
     </div>
   </header>
 
-  <main class="text-center">
-    <h2>Designed for the future</h2>
+  <main class="text-center mt-28">
+    <section class="">
+      <h2 class="font-Overpass font-semibold text-3xl text-very-dark-blue">Designed for the future</h2>
 
-    <section>
-      <div>
+      <div class="mt-10">
         <picture>
           <source srcset="./images/illustration-editor-desktop.svg" media="(min-width: 768px)">
           <img src="./images/illustration-editor-mobile.svg" alt="MDN">
          </picture>
       </div>
 
-      <div>
-        <h3>Introducing an extensible editor</h3>
-        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+      <div class="w-3/4 mx-auto mt-12">
+        <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue">Introducing an extensible editor</h3>
+        <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
           The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
           videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
           change the looks of a blog.</p>
-        <h3>Robust content management</h3>
-        <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+
+        <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue mt-10">Robust content management</h3>
+        <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
           by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
       </div>
     </section>
 
-    <section>
+    <section class="relative bg-gradient-to-b from-very-dark-desaturated-blue to-very-dark-gray-blue mt-72 py-6 rounded-bl-tr-4xl">
       <div>
-        <img src="./images/illustration-phones.svg" alt="">
+        <img src="./images/illustration-phones.svg" alt="" class="absolute w-96 -top-44">
       </div>
 
+      <img src="images/bg-pattern-circles.svg" alt="">
+
       <div>
-        <h2>State of the Art Infrastructure</h2>
-        <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        <h2 class="font-Overpass font-semibold text-4xl text-white">State of the Art Infrastructure</h2>
+        <p class="font-Overpass font-light text-white mt-3 mx-4">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
           This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
       </div>
     </section>
 
-    <section>
-      <picture>
+    <section class="w-full mt-20">
+      <picture class="w-full">
         <source srcset="./images/illustration-laptop-desktop.svg" media="(min-width: 1024px)">
-        <img src="./images/illustration-laptop-mobile.svg" alt="MDN">
+        <img src="./images/illustration-laptop-mobile.svg" alt="MDN" class="">
+        <!-- !check the w of the image -->
        </picture>
 
-       <div>
-        <h3>Free, open, simple</h3>
-        <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+       <div class="w-3/4 mt-16 mx-auto">
+        <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue">Free, open, simple</h3>
+        <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
         features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
         and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
-        <h3>Powerful tooling</h3>
-        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue">Powerful tooling</h3>
+        <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
         capable of producing even the most complicated sites.</p>
        </div>
     </section>
   </main>
 
-  <footer class="bg-very-dark-desaturated-blue">
+  <footer class="flex flex-col justify-center items-center bg-very-dark-black-blue rounded-tr-4xl mt-28 py-20 gap-16">
     <img src="./images/logo.svg" alt="">
 
-    <div>
-      <h4>Product</h4>
-      <div>
-        <a href="#">Overview</a>
-        <a href="#">Pricing</a>
-        <a href="#">Marketplace</a>
-        <a href="#">Features</a>
-        <a href="#">Integrations</a>
+    <!-- !check is there is a better way to center the elements  -->
+
+    <div class="flex flex-col items-center gap-5">
+      <h4 class="font-Ubuntu font-medium text-lg text-white">Product</h4>
+      <div class="flex flex-col items-center gap-2">
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Overview</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Pricing</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Marketplace</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Features</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Integrations</a>
       </div>
     </div>
 
-    <div>
-      <h4>Company</h4>
-      <div>
-        <a href="#">About</a>
-        <a href="#">Team</a>
-        <a href="#">Marketplace</a>
-        <a href="#">Careers</a>
+    <div class="flex flex-col items-center gap-5">
+      <h4 class="font-Ubuntu font-medium text-lg text-white">Company</h4>
+      <div class="flex flex-col items-center gap-2">
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">About</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Team</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Marketplace</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Careers</a>
       </div>
     </div>
 
-    <div>
-      <h4>Connect</h4>
-      <div>
-        <a href="#">Contact</a>
-        <a href="#">Newsletter</a>
-        <a href="#">Marketplace</a>
-        <a href="#">LinkedIn</a>
+    <div class="flex flex-col items-center gap-5">
+      <h4 class="font-Ubuntu font-medium text-lg text-white">Connect</h4>
+      <div class="flex flex-col items-center gap-2">
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Contact</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Newsletter</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Marketplace</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">LinkedIn</a>
       </div>
     </div>
   </footer>
 
-  <script src="../javascript/main.js"></script>
-  <!-- <script src="../build/javascript/main.js"></script> -->
+  <!-- <script src="../javascript/main.js"></script> -->
+  <script src="../build/javascript/main.js"></script>
 </body>
 </html>
