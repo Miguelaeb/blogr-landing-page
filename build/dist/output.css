@@ -661,10 +661,6 @@ video {
   max-width: 72rem;
 }
 
-.flex-row{
-  flex-direction: row;
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -681,6 +677,14 @@ video {
   justify-content: space-between;
 }
 
+.gap-16{
+  gap: 4rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
 .gap-3{
   gap: 0.75rem;
 }
@@ -689,20 +693,8 @@ video {
   gap: 1rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
-.gap-16{
-  gap: 4rem;
-}
-
 .gap-5{
   gap: 1.25rem;
-}
-
-.gap-2{
-  gap: 0.5rem;
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]){
@@ -819,6 +811,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -832,21 +829,6 @@ video {
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .pb-28{
@@ -897,12 +879,12 @@ video {
   font-weight: 300;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .font-medium{
   font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .text-White{
@@ -913,6 +895,11 @@ video {
 .text-gray-800{
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.text-grayish-blue{
+  --tw-text-opacity: 1;
+  color: hsl(240 2% 79% / var(--tw-text-opacity));
 }
 
 .text-light-red{
@@ -933,11 +920,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-grayish-blue{
-  --tw-text-opacity: 1;
-  color: hsl(240 2% 79% / var(--tw-text-opacity));
 }
 
 .shadow-lg{
@@ -975,5 +957,19 @@ video {
 
   .md\:hidden{
     display: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:bg-\[linear-gradient\(0deg\2c green\2c pink\)\2c url\(\'\/image2\.jpg\'\)\]{
+    background-image: linear-gradient(0deg,green,pink),url('/image2.jpg');
+  }
+
+  .lg\:bg-\[linear-gradient\(0deg\2c green\2c pink\)\2c url\(\'\.\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
+    background-image: linear-gradient(0deg,green,pink),url('./images/bg-pattern-intro-mobile.svg');
+  }
+
+  .lg\:bg-\[linear-gradient\(0deg\2c green\2c pink\)\2c url\(\'\.\.\/build\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
+    background-image: linear-gradient(0deg,green,pink),url('../build/images/bg-pattern-intro-mobile.svg');
   }
 }
