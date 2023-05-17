@@ -777,8 +777,28 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[linear-gradient\(90deg\2c \#ff7a36\2c \#ff3a6a\)\2c url\(\'\.\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
+  background-image: linear-gradient(90deg,#ff7a36,#ff3a6a),url('./images/bg-pattern-intro-mobile.svg');
+}
+
+.bg-\[url\(\'\.\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
+  background-image: url('./images/bg-pattern-intro-mobile.svg');
+}
+
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\.\.\/build\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
+  background-image: url('../build/images/bg-pattern-intro-mobile.svg');
+}
+
+.bg-\[linear-gradient\(180deg\2c \#ff7a36\2c \#ff3a6a\)\2c url\(\'\.\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
+  background-image: linear-gradient(180deg,#ff7a36,#ff3a6a),url('./images/bg-pattern-intro-mobile.svg');
+}
+
+.bg-\[linear-gradient\(9I0deg\2c \#ff7a36\2c \#ff3a6a\)\2c url\(\'\.\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
+  background-image: linear-gradient(9I0deg,#ff7a36,#ff3a6a),url('./images/bg-pattern-intro-mobile.svg');
 }
 
 .from-very-dark-desaturated-blue{
@@ -957,19 +977,5 @@ video {
 
   .md\:hidden{
     display: none;
-  }
-}
-
-@media (min-width: 1024px){
-  .lg\:bg-\[linear-gradient\(0deg\2c green\2c pink\)\2c url\(\'\/image2\.jpg\'\)\]{
-    background-image: linear-gradient(0deg,green,pink),url('/image2.jpg');
-  }
-
-  .lg\:bg-\[linear-gradient\(0deg\2c green\2c pink\)\2c url\(\'\.\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
-    background-image: linear-gradient(0deg,green,pink),url('./images/bg-pattern-intro-mobile.svg');
-  }
-
-  .lg\:bg-\[linear-gradient\(0deg\2c green\2c pink\)\2c url\(\'\.\.\/build\/images\/bg-pattern-intro-mobile\.svg\'\)\]{
-    background-image: linear-gradient(0deg,green,pink),url('../build/images/bg-pattern-intro-mobile.svg');
   }
 }
