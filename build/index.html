@@ -18,7 +18,7 @@
 <body>
   <header
     class="headerContainer relative pt-5 pb-28 rounded-bl-4xl bg-[url('../images/bg-pattern-intro-mobile.svg'),linear-gradient(90deg,#ff896f,#ff525c)] bg-no-repeat bg-[top_35%_left_37%]">
-    <nav class="relative z-10">
+    <nav class="">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
           <div class="flex space-x-7">
@@ -30,97 +30,125 @@
             </div>
 
             <!-- Primary Navbar items -->
-            <div
-              class="hidden absolute top-24 right-3 w-11/12 mx-auto py-4 rounded-lg bg-White mobile-menu text-center shadow-lg md:flex md:justify-between md:bg-none md:items-center md:shadow-none ">
-              <ul class="md:flex">
-                <li class="relative">
-                  <div class="nameArrow flex justify-center items-center">
-                    <button aria-expanded="false" aria-controls="mobile-product-dropdown"
-                      class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Product</button>
-                    <img src="./images/icon-arrow-dark.svg" alt=""
-                      class="icon-arrow transition ease-in-out duration-300">
-                  </div>
-                  <ul id="mobile-product-dropdown" class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Overview</a>
-                    </li>
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Marketplace</a>
-                    </li>
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Features</a>
-                    </li>
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Integrations</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="relative">
-                  <div class="nameArrow flex justify-center items-center">
-                    <button aria-expanded="false" aria-controls="mobile-company-dropdown"
-                      class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Company</button>
-                    <img src="./images/icon-arrow-dark.svg" alt=""
-                      class="icon-arrow transition ease-in-out duration-300">
-                  </div>
-                  <ul id="mobile-company-dropdown" class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">About
-                        Us</a></li>
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Team</a>
-                    </li>
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Blog</a>
-                    </li>
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Careers</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="relative">
-                  <div class="nameArrow flex justify-center items-center">
-                    <button aria-expanded="false" aria-controls="mobile-connect-dropdown"
-                      class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Connect</button>
-                    <img src="./images/icon-arrow-dark.svg" alt=""
-                      class="icon-arrow transition ease-in-out duration-300">
-                  </div>
-                  <ul id="mobile-connect-dropdown" class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Contact</a>
-                    </li>
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Newsletter</a>
-                    </li>
-                    <li><a href="#"
-                        class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">LinkedIn</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-
-              <div class="h-one w-4/5 mx-auto bg-dropdown-gray mt-4 md:hidden"></div>
-
-              <!-- Secondary Navbar items -->
-              <div class="flex flex-col gap-3 md:block">
-                <a href=""
-                  class="py-2 font-Overpass text-lg font-semibold text-very-dark-blue px-2 transition duration-300">Log
-                  In</a>
-                <a href=""
-                  class="py-3 font-Ubuntu font-bold text-base text-white transition duration-300 bg-light-red rounded-full w-6/12 mx-auto">Sign
-                  Up</a>
+            <div class="hidden md:flex items-center space-x-1">
+              <div class="relative">
+                <button aria-expanded="false" aria-controls="product-dropdown"
+                  class="py-4 px-2 text-White transition duration-300">Product</button>
+                <ul id="product-dropdown" class="absolute hidden bg-white rounded-lg shadow-lg py-2">
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Overview</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Marketplace</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Features</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Integrations</a></li>
+                </ul>
+              </div>
+              <div class="relative">
+                <button aria-expanded="false" aria-controls="company-dropdown"
+                  class="py-4 px-2 text-White transition duration-300">Company</button>
+                <ul id="company-dropdown" class="absolute hidden bg-white rounded-lg shadow-lg py-2">
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About Us</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Team</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Blog</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Careers</a></li>
+                </ul>
+              </div>
+              <div class="relative">
+                <button aria-expanded="false" aria-controls="connect-dropdown"
+                  class="py-4 px-2 text-White transition duration-300">Connect</button>
+                <ul id="connect-dropdown" class="absolute hidden bg-white rounded-lg shadow-lg py-2">
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Newsletter</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">LinkedIn</a></li>
+                </ul>
               </div>
             </div>
+            <!-- Primary Navbar items -->
           </div>
 
+          <!-- Secondary Navbar items -->
+          <div class="hidden md:flex items-center space-x-3">
+            <a href="" class="py-2 text-White px-2 transition rounded-full duration-300">Log In</a>
+            <a href="" class="py-2 text-White px-2 transition rounded-full duration-300">Sign Up</a>
+          </div>
+          <!-- Secondary Navbar items -->
+
           <!-- Mobile menu button -->
-          <div class="md:hidden relative z-10 flex items-center">
+          <div class="md:hidden flex items-center">
             <button class="outline-none mobile-menu-button">
               <img src="./images/icon-hamburger.svg" alt="" id="icon-hamburger" class="">
               <img src="./images/icon-close.svg" alt="" id="icon-close" class="hidden">
             </button>
           </div>
+          <!-- Mobile menu button -->
+
         </div>
       </div>
+
+      <!-- mobile menu -->
+      <div
+        class="hidden absolute left-0 right-0 w-11/12 m-auto py-4 rounded-lg bg-White mobile-menu text-center shadow-lg">
+        <ul class="">
+          <li class="relative">
+            <div class="nameArrow flex justify-center items-center">
+              <button aria-expanded="false" aria-controls="mobile-product-dropdown"
+                class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Product</button>
+              <img src="./images/icon-arrow-dark.svg" alt="" class="icon-arrow transition ease-in-out duration-300">
+            </div>
+            <ul id="mobile-product-dropdown" class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
+              <li><a href="#"
+                  class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Overview</a></li>
+              <li><a href="#"
+                  class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Marketplace</a></li>
+              <li><a href="#"
+                  class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Features</a></li>
+              <li><a href="#"
+                  class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Integrations</a>
+              </li>
+            </ul>
+          </li>
+          <li class="relative">
+            <div class="nameArrow flex justify-center items-center">
+              <button aria-expanded="false" aria-controls="mobile-company-dropdown"
+                class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Company</button>
+              <img src="./images/icon-arrow-dark.svg" alt="" class="icon-arrow transition ease-in-out duration-300">
+            </div>
+            <ul id="mobile-company-dropdown" class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
+              <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">About
+                  Us</a></li>
+              <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Team</a>
+              </li>
+              <li><a href="#" class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Blog</a>
+              </li>
+              <li><a href="#"
+                  class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Careers</a></li>
+            </ul>
+          </li>
+          <li class="relative">
+            <div class="nameArrow flex justify-center items-center">
+              <button aria-expanded="false" aria-controls="mobile-connect-dropdown"
+                class="block font-Overpass text-base font-semibold px-2 py-4 text-very-dark-blue transition duration-300">Connect</button>
+              <img src="./images/icon-arrow-dark.svg" alt="" class="icon-arrow transition ease-in-out duration-300">
+            </div>
+            <ul id="mobile-connect-dropdown" class="hidden w-4/5 mx-auto rounded-lg py-2 bg-dropdown-gray">
+              <li><a href="#"
+                  class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Contact</a></li>
+              <li><a href="#"
+                  class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">Newsletter</a></li>
+              <li><a href="#"
+                  class="block px-4 py-2 font-Overpass font-semibold text-base text-very-dark-blue">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="h-one w-4/5 mx-auto bg-dropdown-gray mt-4"></div>
+
+        <div class="flex flex-col gap-3">
+          <a href=""
+            class="py-2 font-Overpass text-lg font-semibold text-very-dark-blue px-2 transition duration-300">Log In</a>
+          <a href=""
+            class="py-3 font-Ubuntu font-bold text-base text-white transition duration-300 bg-light-red rounded-full w-6/12 mx-auto">Sign
+            Up</a>
+        </div>
+      </div>
+      <!-- mobile menu -->
     </nav>
 
     <h1 class="headertitle text-center font-Overpass text-White font-semibold text-4xl px-6 mt-28">A modern
@@ -129,10 +157,10 @@
       audience and build your online brand</p>
 
     <div class="headerButton flex items-center justify-center mt-10 gap-4">
-      <a href="#" class="font-Ubuntu font-bold text-base bg-White text-light-red py-2 px-4 rounded-full relative">Start
+      <a href="#" class="font-Ubuntu font-bold text-base bg-White text-light-red py-2 px-4 rounded-full">Start
         for Free</a>
       <a href="#"
-        class="font-Ubuntu font-bold text-base  text-White border-solid border-White border py-2 px-4 rounded-full relative">Learn
+        class="font-Ubuntu font-bold text-base  text-White border-solid border-White border py-2 px-4 rounded-full">Learn
         More</a>
     </div>
   </header>
@@ -200,38 +228,37 @@
   </main>
 
   <footer class="flex flex-col items-center bg-very-dark-black-blue rounded-tr-4xl mt-28 py-20 gap-16">
+    
     <img src="./images/logo.svg" alt="">
-
-    <!-- ! Check if there is a better way to center the elements  -->
 
     <div class="flex flex-col items-center gap-5">
       <h4 class="font-Ubuntu font-medium text-lg text-white">Product</h4>
       <div class="flex flex-col items-center gap-2">
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Overview</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Pricing</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Marketplace</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Features</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Integrations</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Overview</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Pricing</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Marketplace</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Features</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Integrations</a>
       </div>
     </div>
 
     <div class="flex flex-col items-center gap-5">
       <h4 class="font-Ubuntu font-medium text-lg text-white">Company</h4>
       <div class="flex flex-col items-center gap-2">
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">About</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Team</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Marketplace</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Careers</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">About</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Team</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Marketplace</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Careers</a>
       </div>
     </div>
 
     <div class="flex flex-col items-center gap-5">
       <h4 class="font-Ubuntu font-medium text-lg text-white">Connect</h4>
       <div class="flex flex-col items-center gap-2">
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Contact</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Newsletter</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">Marketplace</a>
-        <a href="#" class="font-Ubuntu font-medium text-grayish-blue">LinkedIn</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Contact</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Newsletter</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Marketplace</a>
+        <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">LinkedIn</a>
       </div>
     </div>
   </footer>
