@@ -37,12 +37,8 @@ module.exports = {
         one: '2px',
       },
 
-      scale: {
-        '400': '4',
-        '600': '6',
-        '800': '8',
-        '900': '9',
-        '1000': '10',
+      backgroundSize: {
+        '120%': '120%',
       },
 
       fontFamily: {
