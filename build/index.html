@@ -1,463 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png" />
-        <link rel="stylesheet" href="./dist/output.css" />
-        <!-- <link rel="stylesheet" href="../build/dist/output.css" /> -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Frontend Mentor | Blogr landing page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- <link rel="stylesheet" href="../build/dist/output.css" /> -->
 
-        <!-- TODO Fix the navbar, I don't have to have 2 navs -->
-    </head>
+    <title>Frontend Mentor | Blogr landing page</title>
 
-    <body>
-        <header
-            class="headerContainer relative pt-5 pb-28 rounded-bl-4xl bg-[url('../images/bg-pattern-intro-mobile.svg'),linear-gradient(90deg,#ff896f,#ff525c)] bg-no-repeat bg-[top_35%_left_37%] xl:bg-[top_53%_left_12%] xl:bg-180%">
+    <!-- TODO Fix the navbar, I don't have to have 2 navs -->
+</head>
+
+<body>
+    <header
+        class="headerContainer relative pt-5 pb-28 rounded-bl-4xl bg-[url('../images/bg-pattern-intro-mobile.svg'),linear-gradient(90deg,#ff896f,#ff525c)] bg-no-repeat bg-[top_35%_left_37%] xl:bg-[top_53%_left_12%] xl:bg-180%">
+        <header>
             <nav class="">
-                <div class="max-w-6xl mx-auto px-4">
-                    <!-- Website Logo -->
-                    <div>
-                        <a href="#" class="flex items-center py-4 px-2">
-                            <img
-                                src="./images/logo.svg"
-                                alt="Logo"
-                                class="relative w-16 mr-2" />
-                        </a>
+                <div class="max-w-6xl mx-auto px-4 flex justify-between">
+    
+                    <div class="flex space-x-7">
+                        <!-- Website Logo -->
+                            <a href="#" class="flex items-center py-4 px-2">
+                                <img src="./images/logo.svg" alt="Logo" class="relative w-16 mr-2" />
+                            </a>
+                        <!-- Website Logo -->
+
+                            <!-- Primary Navbar items -->
+                            <div class="hidden md:flex items-center space-x-1">
+                                <div class="relative">
+                                    <div class="nameArrow flex items-center">
+                                        <button aria-expanded="false" aria-controls="product-dropdown"
+                                            class="py-4 px-2 text-White transition duration-300">
+                                            Product
+                                        </button>
+                                        <picture class="grid place-items-center">
+                                            <source srcset="
+                                                        ./images/icon-arrow-light.svg
+                                                    " media="(min-width: 768px)" />
+                                            <img src="./images/icon-arrow-dark.svg" alt="MDN"
+                                                class="icon-arrow product-arrow transition ease-in-out duration-300" />
+                                        </picture>
+                                    </div>
+                                    <ul id="product-dropdown"
+                                        class="product-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Overview</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Marketplace</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Integrations</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="relative">
+                                    <div class="nameArrow flex items-center">
+                                        <button aria-expanded="false" aria-controls="company-dropdown"
+                                            class="py-4 px-2 text-White transition duration-300">
+                                            Company
+                                        </button>
+                                        <picture class="grid place-items-center">
+                                            <source srcset="
+                                                        ./images/icon-arrow-light.svg
+                                                    " media="(min-width: 768px)" />
+                                            <img src="./images/icon-arrow-dark.svg" alt="MDN"
+                                                class="icon-arrow company-arrow transition ease-in-out duration-300" />
+                                        </picture>
+                                    </div>
+                                    <ul id="company-dropdown"
+                                        class="company-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2 w-28">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">About
+                                                Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Careers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="relative">
+                                    <div class="nameArrow flex items-center">
+                                        <button aria-expanded="false" aria-controls="connect-dropdown"
+                                            class="py-4 px-2 text-White transition duration-300">
+                                            Connect
+                                        </button>
+                                        <picture class="grid place-items-center">
+                                            <source srcset="
+                                                        ./images/icon-arrow-light.svg
+                                                    " media="(min-width: 768px)" />
+                                            <img src="./images/icon-arrow-dark.svg" alt="MDN"
+                                                class="icon-arrow connect-arrow transition ease-in-out duration-300" />
+                                        </picture>
+                                    </div>
+                                    <ul id="connect-dropdown"
+                                        class="connect-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2">
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Newsletter</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">LinkedIn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Primary Navbar items -->
                     </div>
-                    <!-- Website Logo -->
-
-                    <div
-                        class="absolute md:relative md:flex md:justify-between">
-                        <!-- Primary Navbar items -->
-                        <div class="hidden md:flex items-center space-x-1">
-                            <div class="relative">
-                                <div class="nameArrow flex items-center">
-                                    <button
-                                        aria-expanded="false"
-                                        aria-controls="product-dropdown"
-                                        class="py-4 px-2 text-White transition duration-300">
-                                        Product
-                                    </button>
-                                    <picture class="grid place-items-center">
-                                        <source
-                                            srcset="
-                                                ./images/icon-arrow-light.svg
-                                            "
-                                            media="(min-width: 768px)" />
-                                        <img
-                                            src="./images/icon-arrow-dark.svg"
-                                            alt="MDN"
-                                            class="icon-arrow product-arrow transition ease-in-out duration-300" />
-                                    </picture>
-                                </div>
-                                <ul
-                                    id="product-dropdown"
-                                    class="product-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2">
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Overview</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Marketplace</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Features</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Integrations</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="relative">
-                                <div class="nameArrow flex items-center">
-                                    <button
-                                        aria-expanded="false"
-                                        aria-controls="company-dropdown"
-                                        class="py-4 px-2 text-White transition duration-300">
-                                        Company
-                                    </button>
-                                    <picture class="grid place-items-center">
-                                        <source
-                                            srcset="
-                                                ./images/icon-arrow-light.svg
-                                            "
-                                            media="(min-width: 768px)" />
-                                        <img
-                                            src="./images/icon-arrow-dark.svg"
-                                            alt="MDN"
-                                            class="icon-arrow company-arrow transition ease-in-out duration-300" />
-                                    </picture>
-                                </div>
-                                <ul
-                                    id="company-dropdown"
-                                    class="company-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2 w-28">
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >About Us</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Team</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Blog</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Careers</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="relative">
-                                <div class="nameArrow flex items-center">
-                                    <button
-                                        aria-expanded="false"
-                                        aria-controls="connect-dropdown"
-                                        class="py-4 px-2 text-White transition duration-300">
-                                        Connect
-                                    </button>
-                                    <picture class="grid place-items-center">
-                                        <source
-                                            srcset="
-                                                ./images/icon-arrow-light.svg
-                                            "
-                                            media="(min-width: 768px)" />
-                                        <img
-                                            src="./images/icon-arrow-dark.svg"
-                                            alt="MDN"
-                                            class="icon-arrow connect-arrow transition ease-in-out duration-300" />
-                                    </picture>
-                                </div>
-                                <ul
-                                    id="connect-dropdown"
-                                    class="connect-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2">
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Contact</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >Newsletter</a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue"
-                                            >LinkedIn</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Primary Navbar items -->
-
-                        <!-- Secondary Navbar items -->
-                        <div class="hidden md:flex items-center space-x-3">
-                            <a
-                                href=""
-                                class="py-2 text-White px-2 transition rounded-full duration-300"
-                                >Log In</a
-                            >
-                            <a
-                                href=""
-                                class="font-Ubuntu font-bold text-base bg-White text-light-red py-1 px-4 rounded-full"
-                                >Sign Up</a
-                            >
-                        </div>
+    
+                    <!-- Secondary Navbar items -->
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="" class="py-2 text-White px-2 transition rounded-full duration-300">Log In</a>
+                        <a href=""
+                            class="font-Ubuntu font-bold text-base bg-White text-light-red py-1 px-4 rounded-full">Sign
+                            Up</a>
                         <!-- Secondary Navbar items -->
                     </div>
-
                     <!-- Mobile menu button -->
                     <div class="md:hidden flex items-center">
                         <button class="outline-none mobile-menu-button">
-                            <img
-                                src="./images/icon-hamburger.svg"
-                                alt=""
-                                id="icon-hamburger"
-                                class="" />
-                            <img
-                                src="./images/icon-close.svg"
-                                alt=""
-                                id="icon-close"
-                                class="hidden" />
+                            <img src="./images/icon-hamburger.svg" alt="" id="icon-hamburger" class="" />
+                            <img src="./images/icon-close.svg" alt="" id="icon-close" class="hidden" />
                         </button>
                     </div>
                     <!-- Mobile menu button -->
                 </div>
             </nav>
+          </header>
 
-            <h1
-                class="headertitle text-center font-Overpass text-White font-semibold text-4xl px-6 mt-28">
-                A modern publishing platform
-            </h1>
-            <p
-                class="headerDescription text-center font-Overpass font-light text-White mt-5 text-lg mx-8">
-                Grow your audience and build your online brand
-            </p>
+        <h1 class="headertitle text-center font-Overpass text-White font-semibold text-4xl px-6 mt-28">
+            A modern publishing platform
+        </h1>
+        <p class="headerDescription text-center font-Overpass font-light text-White mt-5 text-lg mx-8">
+            Grow your audience and build your online brand
+        </p>
 
-            <div
-                class="headerButton flex items-center justify-center mt-10 gap-4">
-                <a
-                    href="#"
-                    class="font-Ubuntu font-bold text-base bg-White text-light-red py-2 px-4 rounded-full"
-                    >Start for Free</a
-                >
-                <a
-                    href="#"
-                    class="font-Ubuntu font-bold text-base text-White border-solid border-White border py-2 px-4 rounded-full"
-                    >Learn More</a
-                >
-            </div>
-        </header>
+        <div class="headerButton flex items-center justify-center mt-10 gap-4">
+            <a href="#" class="font-Ubuntu font-bold text-base bg-White text-light-red py-2 px-4 rounded-full">Start for
+                Free</a>
+            <a href="#"
+                class="font-Ubuntu font-bold text-base text-White border-solid border-White border py-2 px-4 rounded-full">Learn
+                More</a>
+        </div>
+    </header>
 
-        <main class="text-center mt-28">
-            <section class="grid place-items-center">
-                <h2
-                    class="font-Overpass font-semibold text-3xl text-very-dark-blue">
-                    Designed for the future
-                </h2>
+    <main class="text-center mt-28">
+        <section class="grid place-items-center">
+            <h2 class="font-Overpass font-semibold text-3xl text-very-dark-blue">
+                Designed for the future
+            </h2>
 
-                <div class="mt-10">
-                    <picture>
-                        <source
-                            srcset="./images/illustration-editor-desktop.svg"
-                            media="(min-width: 1024px)" />
-                        <img
-                            src="./images/illustration-editor-mobile.svg"
-                            alt="MDN" />
-                    </picture>
-                </div>
-
-                <div class="w-3/4 mx-auto mt-12">
-                    <h3
-                        class="font-Overpass font-semibold text-3xl text-very-dark-blue">
-                        Introducing an extensible editor
-                    </h3>
-                    <p
-                        class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
-                        Blogr features an exceedingly intuitive interface which
-                        lets you focus on one thing: creating content. The
-                        editor supports management of multiple blogs and allows
-                        easy manipulation of embeds such as images, videos, and
-                        Markdown. Extensibility with plugins and themes provide
-                        easy ways to add functionality or change the looks of a
-                        blog.
-                    </p>
-
-                    <h3
-                        class="font-Overpass font-semibold text-3xl text-very-dark-blue mt-10">
-                        Robust content management
-                    </h3>
-                    <p
-                        class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
-                        Flexible content management enables users to easily move
-                        through posts. Increase the usability of your blog by
-                        adding customized categories, sections, format, or flow.
-                        With this functionality, you’re in full control.
-                    </p>
-                </div>
-            </section>
-
-            <section
-                class="relative mt-72 py-28 rounded-bl-tr-4xl bg-[url('../images/bg-pattern-circles.svg'),linear-gradient(90deg,#323348,#3d3f60)] bg-no-repeat bg-120% bg-[top_-80%_left_50%]">
-                <div class="md:flex md:justify-center">
-                    <img
-                        src="./images/illustration-phones.svg"
-                        alt=""
-                        class="absolute w-96 -top-44 md:-top-72" />
-                </div>
-
-                <div>
-                    <h2
-                        class="font-Overpass font-semibold text-4xl text-white mt-36">
-                        State of the Art Infrastructure
-                    </h2>
-                    <p class="font-Overpass font-light text-white mt-3 mx-12">
-                        With reliability and speed in mind, worldwide data
-                        centers provide the backbone for ultra-fast
-                        connectivity. This ensures your site will load
-                        instantly, no matter where your readers are, keeping
-                        your site competitive.
-                    </p>
-                </div>
-            </section>
-
-            <section class="mt-20">
-                <picture class="grid place-items-center">
-                    <source
-                        srcset="./images/illustration-laptop-desktop.svg"
-                        media="(min-width: 1024px)" />
-                    <img
-                        src="./images/illustration-laptop-mobile.svg"
-                        alt="MDN"
-                        class="" />
+            <div class="mt-10">
+                <picture>
+                    <source srcset="./images/illustration-editor-desktop.svg" media="(min-width: 1024px)" />
+                    <img src="./images/illustration-editor-mobile.svg" alt="MDN" />
                 </picture>
-
-                <div class="w-3/4 mt-16 mx-auto">
-                    <h3
-                        class="font-Overpass font-semibold text-3xl text-very-dark-blue">
-                        Free, open, simple
-                    </h3>
-                    <p
-                        class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
-                        Blogr is a free and open source application backed by a
-                        large community of helpful developers. It supports
-                        features such as code syntax highlighting, RSS feeds,
-                        social media integration, third-party commenting tools,
-                        and works seamlessly with Google Analytics. The
-                        architecture is clean and is relatively easy to learn.
-                    </p>
-                    <h3
-                        class="font-Overpass font-semibold text-3xl text-very-dark-blue mt-4">
-                        Powerful tooling
-                    </h3>
-                    <p
-                        class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
-                        Batteries included. We built a simple and
-                        straightforward CLI tool that makes customization and
-                        deployment a breeze, but capable of producing even the
-                        most complicated sites.
-                    </p>
-                </div>
-            </section>
-        </main>
-
-        <footer
-            class="flex flex-col items-center bg-very-dark-black-blue rounded-tr-4xl mt-28 py-20 gap-16">
-            <img src="./images/logo.svg" alt="" />
-
-            <div class="flex flex-col items-center gap-5">
-                <h4 class="font-Ubuntu font-medium text-lg text-white">
-                    Product
-                </h4>
-                <div class="flex flex-col items-center gap-2">
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Overview</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Pricing</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Marketplace</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Features</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Integrations</a
-                    >
-                </div>
             </div>
 
-            <div class="flex flex-col items-center gap-5">
-                <h4 class="font-Ubuntu font-medium text-lg text-white">
-                    Company
-                </h4>
-                <div class="flex flex-col items-center gap-2">
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >About</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Team</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Marketplace</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Careers</a
-                    >
-                </div>
+            <div class="w-3/4 mx-auto mt-12">
+                <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue">
+                    Introducing an extensible editor
+                </h3>
+                <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
+                    Blogr features an exceedingly intuitive interface which
+                    lets you focus on one thing: creating content. The
+                    editor supports management of multiple blogs and allows
+                    easy manipulation of embeds such as images, videos, and
+                    Markdown. Extensibility with plugins and themes provide
+                    easy ways to add functionality or change the looks of a
+                    blog.
+                </p>
+
+                <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue mt-10">
+                    Robust content management
+                </h3>
+                <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
+                    Flexible content management enables users to easily move
+                    through posts. Increase the usability of your blog by
+                    adding customized categories, sections, format, or flow.
+                    With this functionality, you’re in full control.
+                </p>
+            </div>
+        </section>
+
+        <section
+            class="relative mt-72 py-28 rounded-bl-tr-4xl bg-[url('../images/bg-pattern-circles.svg'),linear-gradient(90deg,#323348,#3d3f60)] bg-no-repeat bg-120% bg-[top_-80%_left_50%]">
+            <div class="md:flex md:justify-center">
+                <img src="./images/illustration-phones.svg" alt="" class="absolute w-96 -top-44 md:-top-72" />
             </div>
 
-            <div class="flex flex-col items-center gap-5">
-                <h4 class="font-Ubuntu font-medium text-lg text-white">
-                    Connect
-                </h4>
-                <div class="flex flex-col items-center gap-2">
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Contact</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Newsletter</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >Marketplace</a
-                    >
-                    <a
-                        href="#"
-                        class="font-Ubuntu font-medium text-grayish-blue hover:underline"
-                        >LinkedIn</a
-                    >
-                </div>
+            <div>
+                <h2 class="font-Overpass font-semibold text-4xl text-white mt-36">
+                    State of the Art Infrastructure
+                </h2>
+                <p class="font-Overpass font-light text-white mt-3 mx-12">
+                    With reliability and speed in mind, worldwide data
+                    centers provide the backbone for ultra-fast
+                    connectivity. This ensures your site will load
+                    instantly, no matter where your readers are, keeping
+                    your site competitive.
+                </p>
             </div>
-        </footer>
+        </section>
 
-        <script src="./javascript/main.js"></script>
-        <!-- <script src="../build/javascript/main.js"></script> -->
-    </body>
+        <section class="mt-20">
+            <picture class="grid place-items-center">
+                <source srcset="./images/illustration-laptop-desktop.svg" media="(min-width: 1024px)" />
+                <img src="./images/illustration-laptop-mobile.svg" alt="MDN" class="" />
+            </picture>
+
+            <div class="w-3/4 mt-16 mx-auto">
+                <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue">
+                    Free, open, simple
+                </h3>
+                <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
+                    Blogr is a free and open source application backed by a
+                    large community of helpful developers. It supports
+                    features such as code syntax highlighting, RSS feeds,
+                    social media integration, third-party commenting tools,
+                    and works seamlessly with Google Analytics. The
+                    architecture is clean and is relatively easy to learn.
+                </p>
+                <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue mt-4">
+                    Powerful tooling
+                </h3>
+                <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
+                    Batteries included. We built a simple and
+                    straightforward CLI tool that makes customization and
+                    deployment a breeze, but capable of producing even the
+                    most complicated sites.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex flex-col items-center bg-very-dark-black-blue rounded-tr-4xl mt-28 py-20 gap-16">
+        <img src="./images/logo.svg" alt="" />
+
+        <div class="flex flex-col items-center gap-5">
+            <h4 class="font-Ubuntu font-medium text-lg text-white">
+                Product
+            </h4>
+            <div class="flex flex-col items-center gap-2">
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Overview</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Pricing</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Marketplace</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Features</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Integrations</a>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-5">
+            <h4 class="font-Ubuntu font-medium text-lg text-white">
+                Company
+            </h4>
+            <div class="flex flex-col items-center gap-2">
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">About</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Team</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Marketplace</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Careers</a>
+            </div>
+        </div>
+
+        <div class="flex flex-col items-center gap-5">
+            <h4 class="font-Ubuntu font-medium text-lg text-white">
+                Connect
+            </h4>
+            <div class="flex flex-col items-center gap-2">
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Contact</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Newsletter</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">Marketplace</a>
+                <a href="#" class="font-Ubuntu font-medium text-grayish-blue hover:underline">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript/main.js"></script>
+    <!-- <script src="../build/javascript/main.js"></script> -->
+</body>
+
 </html>
