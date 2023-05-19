@@ -994,6 +994,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:relative{
+    position: relative;
+  }
+
   .md\:inset-0{
     inset: 0px;
   }
@@ -1056,6 +1060,10 @@ video {
 
   .md\:justify-center{
     justify-content: center;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
   }
 }
 
