@@ -7,144 +7,148 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="./dist/output.css" />
-    <!-- <link rel="stylesheet" href="../build/dist/output.css" /> -->
 
     <title>Frontend Mentor | Blogr landing page</title>
 
-    <!-- TODO Fix the navbar, I don't have to have 2 navs -->
+    <!-- TODO add hover to the navbar elements -->
 </head>
 
 <body>
     <header
-        class="headerContainer relative pt-5 pb-28 rounded-bl-4xl bg-[url('../images/bg-pattern-intro-mobile.svg'),linear-gradient(90deg,#ff896f,#ff525c)] bg-no-repeat bg-[top_35%_left_37%] xl:bg-[top_53%_left_12%] xl:bg-180%">
-
-        <div class="flex">
-            <a href="#" class="flex items-center py-4 px-2">
-                <img src="./images/logo.svg" alt="Logo" class="relative w-16 mr-2" />
+        class="headerContainer relative pt-8 pb-28 rounded-bl-4xl bg-[url('../images/bg-pattern-intro-mobile.svg'),linear-gradient(90deg,#ff896f,#ff525c)] bg-no-repeat bg-[top_35%_left_37%] xl:bg-[top_53%_left_12%] xl:bg-180%"">
+        <div class="md:flex md:items-center md:justify-center md:px-4 xl:px-28">
+        <div class="flex justify-between px-5 md:w-full md:items-center">
+            
+            <a href="#" class="md:mr-12">
+                <img src="./images/logo.svg" alt="Logo" class="relative w-20 mr-2" />
             </a>
-    
-            <nav>
-                <div class="md:hidden flex items-center">
-                    <button class="outline-none mobile-menu-button">
-                        <img src="./images/icon-hamburger.svg" alt="" id="icon-hamburger" class="" />
-                        <img src="./images/icon-close.svg" alt="" id="icon-close" class="hidden" />
-                    </button>
-                </div>
-    
-                <div class="md:flex">
-                    <!-- Primary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-1">
-                        <div class="relative">
-                            <div class="nameArrow flex items-center">
-                                <button aria-expanded="false" aria-controls="product-dropdown"
-                                    class="py-4 px-2 text-White transition duration-300">
-                                    Product
-                                </button>
-                                <picture class="grid place-items-center">
-                                    <source srcset="
+
+            <!-- Mobile icon -->
+            <div class="flex justify-end items-center md:hidden">
+                <button class="outline-none mobile-menu-button">
+                    <img src="./images/icon-hamburger.svg" alt="" id="icon-hamburger" class="" />
+                    <img src="./images/icon-close.svg" alt="" id="icon-close" class="hidden" />
+                </button>
+            </div>
+            <!-- Mobile icon -->
+
+            <nav class="mobile-menu hidden absolute py-4 top-16 right-0 left-0 w-11/12 mx-auto mt-5 text-center rounded-md shadow-lg md:static bg-white md:bg-transparent md:flex md:items-center md:justify-between md:mt-0 md:w-full md:shadow-none md:rounded-none">
+                <!-- Primary Navbar items -->
+                <div class="flex flex-col items-center md:flex-row md:space-x-1">
+                    <div class="relative w-full flex flex-col items-center md:inline-block">
+                        <div class="nameArrow flex items-center">
+                            <button aria-expanded="false" aria-controls="product-dropdown"
+                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White transition duration-300">
+                                Product
+                            </button>
+                            <picture class="grid place-items-center w-4">
+                                <source srcset="
                                                         ./images/icon-arrow-light.svg
                                                     " media="(min-width: 768px)" />
-                                    <img src="./images/icon-arrow-dark.svg" alt="MDN"
-                                        class="icon-arrow product-arrow transition ease-in-out duration-300" />
-                                </picture>
-                            </div>
-                            <ul id="product-dropdown"
-                                class="product-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Overview</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Marketplace</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Features</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Integrations</a>
-                                </li>
-                            </ul>
+                                <img src="./images/icon-arrow-dark.svg" alt="MDN"
+                                    class="icon-arrow product-arrow transition ease-in-out duration-300" />
+                            </picture>
                         </div>
-                        <div class="relative">
-                            <div class="nameArrow flex items-center">
-                                <button aria-expanded="false" aria-controls="company-dropdown"
-                                    class="py-4 px-2 text-White transition duration-300">
-                                    Company
-                                </button>
-                                <picture class="grid place-items-center">
-                                    <source srcset="
-                                                        ./images/icon-arrow-light.svg
-                                                    " media="(min-width: 768px)" />
-                                    <img src="./images/icon-arrow-dark.svg" alt="MDN"
-                                        class="icon-arrow company-arrow transition ease-in-out duration-300" />
-                                </picture>
-                            </div>
-                            <ul id="company-dropdown"
-                                class="company-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2 w-28">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">About
-                                        Us</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Team</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Careers</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="relative">
-                            <div class="nameArrow flex items-center">
-                                <button aria-expanded="false" aria-controls="connect-dropdown"
-                                    class="py-4 px-2 text-White transition duration-300">
-                                    Connect
-                                </button>
-                                <picture class="grid place-items-center">
-                                    <source srcset="
-                                                        ./images/icon-arrow-light.svg
-                                                    " media="(min-width: 768px)" />
-                                    <img src="./images/icon-arrow-dark.svg" alt="MDN"
-                                        class="icon-arrow connect-arrow transition ease-in-out duration-300" />
-                                </picture>
-                            </div>
-                            <ul id="connect-dropdown"
-                                class="connect-dropdown absolute hidden bg-white rounded-lg shadow-lg py-2">
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Newsletter</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">LinkedIn</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul id="product-dropdown"
+                            class="product-dropdown hidden bg-dropdown-gray rounded-lg py-2 w-4/5 mx-auto md:w-32 md:text-left md:absolute md:bg-white md:shadow-lg">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Marketplace</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Features</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Integrations</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Primary Navbar items -->
-        
-                    <!-- Secondary Navbar items -->
-                    <div class="hidden md:flex items-center space-x-3">
-                        <a href="" class="py-2 text-White px-2 transition rounded-full duration-300">Log In</a>
-                        <a href="" class="font-Ubuntu font-bold text-base bg-White text-light-red py-1 px-4 rounded-full">Sign
-                            Up</a>
+                    <div class="relative w-full flex flex-col items-center md:inline-block">
+                        <div class="nameArrow flex items-center">
+                            <button aria-expanded="false" aria-controls="company-dropdown"
+                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White transition duration-300">
+                                Company
+                            </button>
+                            <picture class="grid place-items-center w-4">
+                                <source srcset="
+                                                        ./images/icon-arrow-light.svg
+                                                    " media="(min-width: 768px)" />
+                                <img src="./images/icon-arrow-dark.svg" alt="MDN"
+                                    class="icon-arrow company-arrow transition ease-in-out duration-300" />
+                            </picture>
+                        </div>
+                        <ul id="company-dropdown"
+                            class="company-dropdown hidden bg-dropdown-gray rounded-lg py-2 w-4/5 mx-auto md:w-32 md:text-left md:absolute md:bg-white md:shadow-lg">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">About
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Team</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Careers</a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- Secondary Navbar items -->
+                    <div class="relative w-full flex flex-col items-center md:inline-block">
+                        <div class="nameArrow flex items-center">
+                            <button aria-expanded="false" aria-controls="connect-dropdown"
+                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White transition duration-300">
+                                Connect
+                            </button>
+                            <picture class="grid place-items-center w-4">
+                                <source srcset="
+                                                        ./images/icon-arrow-light.svg
+                                                    " media="(min-width: 768px)" />
+                                <img src="./images/icon-arrow-dark.svg" alt="MDN"
+                                    class="icon-arrow connect-arrow transition ease-in-out duration-300" />
+                            </picture>
+                        </div>
+                        <ul id="connect-dropdown"
+                            class="connect-dropdown hidden bg-dropdown-gray rounded-lg py-2 w-4/5 mx-auto md:w-32 md:text-left md:absolute md:bg-white md:shadow-lg">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">Newsletter</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 font-Ubuntu font-normal text-very-dark-grayish-blue hover:text-very-dark-black-blue">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <!-- Primary Navbar items -->
+
+                <div class="h-one w-4/5 mx-auto bg-dropdown-gray mt-3 md:hidden"></div>
+
+                <!-- Secondary Navbar items -->
+                <div class="flex flex-col justify-center items-center space-x-4 md:flex-row">
+                    <a href="" class="font-Overpass font-semibold text-very-dark-blue py-1 px-4 md:rounded-full md:font-Ubuntu md:font-normal md:text-White">Log In</a>
+                    <a href=""
+                        class="font-Ubuntu font-bold text-white text-base bg-light-red py-1 px-4 rounded-full md:bg-White md:text-light-red">Sign
+                        Up</a>
+                </div>
+                <!-- Secondary Navbar items -->
             </nav>
+        </div>
         </div>
 
         <h1 class="headertitle text-center font-Overpass text-White font-semibold text-4xl px-6 mt-28">
