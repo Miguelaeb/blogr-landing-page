@@ -31,6 +31,10 @@ module.exports = {
   
         'very-dark-gray-blue': 'hsl(237, 17%, 21%)',
         'very-dark-desaturated-blue': 'hsl(237, 23%, 32%)',
+
+        // Background hover - buttons
+
+        'btn-transparent': 'hsl(355, 100%, 74%)',
       },
 
       height: {

@@ -10,17 +10,17 @@
 
     <title>Frontend Mentor | Blogr landing page</title>
 
-    <!-- TODO add hover to the navbar elements -->
-    <!-- TODO star main section -->
-    <!-- TODO fix footer spaces -->
+    <!-- TODO finish main section -->
+    <!-- TODO add animations to the dropdown -->
+    <!-- TODO check if the page has any problem -->
 </head>
 
 <body>
     <header
         class="headerContainer relative pt-8 pb-28 rounded-bl-4xl bg-[url('../images/bg-pattern-intro-mobile.svg'),linear-gradient(90deg,#ff896f,#ff525c)] bg-no-repeat bg-[top_35%_left_37%] xl:bg-[top_53%_left_12%] xl:bg-180%"">
-        <div class="md:flex md:items-center md:justify-center md:px-4 xl:px-28">
+        <div class=" md:flex md:items-center md:justify-center md:px-4 xl:px-28">
         <div class="flex justify-between px-5 md:w-full md:items-center">
-            
+
             <a href="#" class="md:mr-12">
                 <img src="./images/logo.svg" alt="Logo" class="relative w-20 mr-2" />
             </a>
@@ -34,13 +34,14 @@
             </div>
             <!-- Mobile icon -->
 
-            <nav class="mobile-menu hidden absolute py-4 top-16 right-0 left-0 w-11/12 mx-auto mt-5 text-center rounded-md shadow-lg md:static bg-white md:bg-transparent md:flex md:items-center md:justify-between md:mt-0 md:w-full md:shadow-none md:rounded-none">
+            <nav
+                class="mobile-menu hidden absolute py-4 top-16 right-0 left-0 w-11/12 mx-auto mt-5 text-center rounded-md shadow-lg md:static bg-white md:bg-transparent md:flex md:items-center md:justify-between md:mt-0 md:w-full md:shadow-none md:rounded-none">
                 <!-- Primary Navbar items -->
                 <div class="flex flex-col items-center md:flex-row md:space-x-1">
                     <div class="relative w-full flex flex-col items-center md:inline-block">
                         <div class="nameArrow flex items-center">
                             <button aria-expanded="false" aria-controls="product-dropdown"
-                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White transition duration-300">
+                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White">
                                 Product
                             </button>
                             <picture class="grid place-items-center w-4">
@@ -74,7 +75,7 @@
                     <div class="relative w-full flex flex-col items-center md:inline-block">
                         <div class="nameArrow flex items-center">
                             <button aria-expanded="false" aria-controls="company-dropdown"
-                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White transition duration-300">
+                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White">
                                 Company
                             </button>
                             <picture class="grid place-items-center w-4">
@@ -109,7 +110,7 @@
                     <div class="relative w-full flex flex-col items-center md:inline-block">
                         <div class="nameArrow flex items-center">
                             <button aria-expanded="false" aria-controls="connect-dropdown"
-                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White transition duration-300">
+                                class="py-4 px-2 font-Overpass font-semibold text-very-dark-blue md:font-Ubuntu md:font-bold md:text-White">
                                 Connect
                             </button>
                             <picture class="grid place-items-center w-4">
@@ -143,9 +144,11 @@
 
                 <!-- Secondary Navbar items -->
                 <div class="flex flex-col justify-center items-center space-x-4 md:flex-row">
-                    <a href="" class="font-Overpass font-semibold text-very-dark-blue py-1 px-4 md:rounded-full md:font-Ubuntu md:font-normal md:text-White">Log In</a>
                     <a href=""
-                        class="font-Ubuntu font-bold text-white text-base bg-light-red py-1 px-4 rounded-full md:bg-White md:text-light-red">Sign
+                        class="font-Overpass font-semibold text-very-dark-blue py-1 px-4 md:rounded-full md:font-Ubuntu md:font-normal md:text-White">Log
+                        In</a>
+                    <a href=""
+                        class="font-Ubuntu font-bold text-white text-base bg-light-red py-1 px-4 rounded-full md:bg-White md:text-light-red hover:bg-btn-transparent hover:text-white">Sign
                         Up</a>
                 </div>
                 <!-- Secondary Navbar items -->
@@ -161,57 +164,61 @@
         </p>
 
         <div class="headerButton flex items-center justify-center mt-10 gap-4">
-            <a href="#" class="font-Ubuntu font-bold text-base bg-White text-light-red py-2 px-4 rounded-full">Start for
+            <a href="#"
+                class="py-2 px-4 font-Ubuntu font-bold text-base bg-White text-light-red  rounded-full hover:bg-btn-transparent hover:text-white">Start
+                for
                 Free</a>
             <a href="#"
-                class="font-Ubuntu font-bold text-base text-White border-solid border-White border py-2 px-4 rounded-full">Learn
+                class="py-2 px-4 font-Ubuntu font-bold text-base text-White border-solid border-White border rounded-full hover:bg-white hover:text-light-red">Learn
                 More</a>
         </div>
     </header>
 
-    <main class="text-center mt-28">
-        <section class="grid place-items-center">
-            <h2 class="font-Overpass font-semibold text-3xl text-very-dark-blue">
+    <main class="relative text-center pt-28 xl:overflow-hidden xl:text-left">
+        <section class="flex flex-col justify-center items-center">
+            <h2 class="relative z-10 font-Overpass font-semibold text-3xl text-very-dark-blue xl:text-4xl">
                 Designed for the future
             </h2>
 
-            <div class="mt-10">
-                <picture>
-                    <source srcset="./images/illustration-editor-desktop.svg" media="(min-width: 1024px)" />
-                    <img src="./images/illustration-editor-mobile.svg" alt="MDN" />
-                </picture>
-            </div>
-
-            <div class="w-3/4 mx-auto mt-12">
-                <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue">
-                    Introducing an extensible editor
-                </h3>
-                <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
-                    Blogr features an exceedingly intuitive interface which
-                    lets you focus on one thing: creating content. The
-                    editor supports management of multiple blogs and allows
-                    easy manipulation of embeds such as images, videos, and
-                    Markdown. Extensibility with plugins and themes provide
-                    easy ways to add functionality or change the looks of a
-                    blog.
-                </p>
-
-                <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue mt-10">
-                    Robust content management
-                </h3>
-                <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
-                    Flexible content management enables users to easily move
-                    through posts. Increase the usability of your blog by
-                    adding customized categories, sections, format, or flow.
-                    With this functionality, you’re in full control.
-                </p>
+            <div class="flex flex-col items-center xl:flex-row-reverse">
+                <div class="mt-10 xl:absolute">
+                    <picture>
+                        <source srcset="./images/illustration-editor-desktop.svg" media="(min-width: 1024px)" />
+                        <img src="./images/illustration-editor-mobile.svg" alt="MDN" class="w-96" />
+                    </picture>
+                </div>
+    
+                <div class="relative z-10 w-3/4 mx-auto mt-12">
+                    <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue">
+                        Introducing an extensible editor
+                    </h3>
+                    <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
+                        Blogr features an exceedingly intuitive interface which
+                        lets you focus on one thing: creating content. The
+                        editor supports management of multiple blogs and allows
+                        easy manipulation of embeds such as images, videos, and
+                        Markdown. Extensibility with plugins and themes provide
+                        easy ways to add functionality or change the looks of a
+                        blog.
+                    </p>
+    
+                    <h3 class="font-Overpass font-semibold text-3xl text-very-dark-blue mt-10">
+                        Robust content management
+                    </h3>
+                    <p class="font-Overpass font-light text-very-dark-grayish-blue mt-4">
+                        Flexible content management enables users to easily move
+                        through posts. Increase the usability of your blog by
+                        adding customized categories, sections, format, or flow.
+                        With this functionality, you’re in full control.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section
             class="relative mt-72 py-28 rounded-bl-tr-4xl bg-[url('../images/bg-pattern-circles.svg'),linear-gradient(90deg,#323348,#3d3f60)] bg-no-repeat bg-120% bg-[top_-80%_left_50%]">
             <div class="md:flex md:justify-center">
-                <img src="./images/illustration-phones.svg" alt="" class="absolute w-96 -top-44 md:-top-72" />
+                <img src="./images/illustration-phones.svg" alt="" class="absolute w-96 -top-44" />
             </div>
 
             <div>
@@ -259,7 +266,8 @@
         </section>
     </main>
 
-    <footer class="flex flex-col items-center bg-very-dark-black-blue rounded-tr-4xl mt-28 py-16 gap-16 lg:flex-row lg:justify-center lg:items-start lg:gap-28 xl:justify-start xl:gap-36 xl:pl-56">
+    <footer
+        class="flex flex-col items-center bg-very-dark-black-blue rounded-tr-4xl mt-28 py-16 gap-16 lg:flex-row lg:justify-center lg:items-start lg:gap-28 xl:justify-start xl:gap-36 xl:pl-56 2xl:gap-64">
         <img src="./images/logo.svg" alt="" />
 
         <div class="flex flex-col items-center lg:items-start gap-5">
