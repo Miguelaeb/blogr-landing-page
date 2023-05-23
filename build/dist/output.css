@@ -1152,6 +1152,10 @@ video {
     left: 8rem;
   }
 
+  .xl\:right-28{
+    right: 7rem;
+  }
+
   .xl\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -1178,6 +1182,10 @@ video {
     width: 50%;
   }
 
+  .xl\:w-11\/12{
+    width: 91.666667%;
+  }
+
   .xl\:w-2\/5{
     width: 40%;
   }
@@ -1192,6 +1200,10 @@ video {
 
   .xl\:w-full{
     width: 100%;
+  }
+
+  .xl\:w-screen{
+    width: 100vw;
   }
 
   .xl\:flex-row-reverse{
