@@ -53,6 +53,19 @@ module.exports = {
         Overpass: ["Overpass", "san's-serif"],
         Ubuntu: ["Ubuntu", "sans-serif"],
     },
+
+    inset: {
+      '60%': '60%',
+      '52%': '52%',
+    },
+
+    width: {
+      '600': '600px',
+      '800': '800px',
+      '900': '900px',
+      '1000': '1000px',
+    },
+
     },
   },
   plugins: [],

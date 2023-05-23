@@ -661,6 +661,11 @@ video {
   width: 100%;
 }
 
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1136,12 +1141,20 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:absolute{
+    position: absolute;
+  }
+
   .xl\:relative{
     position: relative;
   }
 
   .xl\:-top-10{
     top: -2.5rem;
+  }
+
+  .xl\:-top-36{
+    top: -9rem;
   }
 
   .xl\:left-2\/4{
@@ -1152,8 +1165,20 @@ video {
     left: 8rem;
   }
 
-  .xl\:right-28{
-    right: 7rem;
+  .xl\:left-60{
+    left: 15rem;
+  }
+
+  .xl\:left-60\%{
+    left: 60%;
+  }
+
+  .xl\:right-52{
+    right: 13rem;
+  }
+
+  .xl\:right-52\%{
+    right: 52%;
   }
 
   .xl\:mx-0{
@@ -1170,8 +1195,12 @@ video {
     margin-top: 0px;
   }
 
-  .xl\:mt-40{
-    margin-top: 10rem;
+  .xl\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .xl\:mt-80{
+    margin-top: 20rem;
   }
 
   .xl\:flex{
@@ -1182,6 +1211,14 @@ video {
     width: 50%;
   }
 
+  .xl\:w-1000{
+    width: 1000px;
+  }
+
+  .xl\:w-11\/12{
+    width: 91.666667%;
+  }
+
   .xl\:w-2\/5{
     width: 40%;
   }
@@ -1190,8 +1227,20 @@ video {
     width: 75%;
   }
 
+  .xl\:w-600{
+    width: 600px;
+  }
+
   .xl\:w-8\/12{
     width: 66.666667%;
+  }
+
+  .xl\:w-9\/12{
+    width: 75%;
+  }
+
+  .xl\:w-900{
+    width: 900px;
   }
 
   .xl\:w-full{
@@ -1248,8 +1297,20 @@ video {
     padding-bottom: 11rem;
   }
 
+  .xl\:pb-20{
+    padding-bottom: 5rem;
+  }
+
+  .xl\:pb-80{
+    padding-bottom: 20rem;
+  }
+
   .xl\:pl-56{
     padding-left: 14rem;
+  }
+
+  .xl\:pt-52{
+    padding-top: 13rem;
   }
 
   .xl\:text-left{
@@ -1263,6 +1324,26 @@ video {
 }
 
 @media (min-width: 1536px){
+  .\32xl\:mt-28{
+    margin-top: 7rem;
+  }
+
+  .\32xl\:mt-32{
+    margin-top: 8rem;
+  }
+
+  .\32xl\:mt-44{
+    margin-top: 11rem;
+  }
+
+  .\32xl\:w-900{
+    width: 900px;
+  }
+
+  .\32xl\:w-800{
+    width: 800px;
+  }
+
   .\32xl\:gap-64{
     gap: 16rem;
   }
