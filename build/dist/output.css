@@ -534,10 +534,6 @@ video {
   position: relative;
 }
 
-.-right-1\/2{
-  right: -50%;
-}
-
 .-top-44{
   top: -11rem;
 }
@@ -552,10 +548,6 @@ video {
 
 .top-16{
   top: 4rem;
-}
-
-.right-2\/4{
-  right: 50%;
 }
 
 .z-10{
@@ -667,10 +659,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-screen{
-  width: 100vw;
 }
 
 .flex-col{
@@ -791,10 +779,6 @@ video {
 
 .bg-\[url\(\'\.\.\/images\/bg-pattern-intro-mobile\.svg\'\)\2c linear-gradient\(90deg\2c \#ff896f\2c \#ff525c\)\]{
   background-image: url('../images/bg-pattern-intro-mobile.svg'),linear-gradient(90deg,#ff896f,#ff525c);
-}
-
-.bg-100\%{
-  background-size: 100%;
 }
 
 .bg-120\%{
@@ -1156,142 +1140,26 @@ video {
     position: relative;
   }
 
-  .xl\:-left-10{
-    left: -2.5rem;
-  }
-
-  .xl\:-left-5{
-    left: -1.25rem;
-  }
-
-  .xl\:-left-1{
-    left: -0.25rem;
-  }
-
-  .xl\:left-1{
-    left: 0.25rem;
-  }
-
-  .xl\:left-5{
-    left: 1.25rem;
-  }
-
-  .xl\:left-10{
-    left: 2.5rem;
-  }
-
-  .xl\:left-20{
-    left: 5rem;
-  }
-
-  .xl\:left-32{
-    left: 8rem;
-  }
-
-  .xl\:top-32{
-    top: 8rem;
-  }
-
-  .xl\:top-20{
-    top: 5rem;
-  }
-
-  .xl\:top-10{
-    top: 2.5rem;
-  }
-
-  .xl\:top-5{
-    top: 1.25rem;
-  }
-
-  .xl\:bottom-5{
-    bottom: 1.25rem;
-  }
-
-  .xl\:bottom-10{
-    bottom: 2.5rem;
-  }
-
-  .xl\:-bottom-10{
-    bottom: -2.5rem;
-  }
-
-  .xl\:-bottom-20{
-    bottom: -5rem;
-  }
-
-  .xl\:-bottom-60{
-    bottom: -15rem;
-  }
-
-  .xl\:-top-60{
-    top: -15rem;
-  }
-
-  .xl\:top-60{
-    top: 15rem;
-  }
-
   .xl\:-top-10{
     top: -2.5rem;
-  }
-
-  .xl\:left-2\/3{
-    left: 66.666667%;
-  }
-
-  .xl\:left-1\/2{
-    left: 50%;
-  }
-
-  .xl\:left-1\/3{
-    left: 33.333333%;
   }
 
   .xl\:left-2\/4{
     left: 50%;
   }
 
-  .xl\:right-2\/4{
-    right: 50%;
-  }
-
-  .xl\:right-1\/3{
-    right: 33.333333%;
-  }
-
-  .xl\:right-1\/4{
-    right: 25%;
-  }
-
-  .xl\:right-96{
-    right: 24rem;
-  }
-
-  .xl\:right-64{
-    right: 16rem;
-  }
-
-  .xl\:right-16{
-    right: 4rem;
-  }
-
-  .xl\:left-48{
-    left: 12rem;
-  }
-
-  .xl\:right-48{
-    right: 12rem;
-  }
-
-  .xl\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
+  .xl\:left-32{
+    left: 8rem;
   }
 
   .xl\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .xl\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .xl\:mt-0{
@@ -1310,6 +1178,10 @@ video {
     width: 50%;
   }
 
+  .xl\:w-2\/5{
+    width: 40%;
+  }
+
   .xl\:w-3\/4{
     width: 75%;
   }
@@ -1322,56 +1194,8 @@ video {
     width: 100%;
   }
 
-  .xl\:w-4\/5{
-    width: 80%;
-  }
-
-  .xl\:w-1\/3{
-    width: 33.333333%;
-  }
-
-  .xl\:w-2\/5{
-    width: 40%;
-  }
-
-  .xl\:w-2\/4{
-    width: 50%;
-  }
-
-  .xl\:w-3\/5{
-    width: 60%;
-  }
-
-  .xl\:w-3\/6{
-    width: 50%;
-  }
-
-  .xl\:w-3\/12{
-    width: 25%;
-  }
-
-  .xl\:w-screen{
-    width: 100vw;
-  }
-
-  .xl\:w-11\/12{
-    width: 91.666667%;
-  }
-
-  .xl\:w-2\/3{
-    width: 66.666667%;
-  }
-
   .xl\:flex-row-reverse{
     flex-direction: row-reverse;
-  }
-
-  .xl\:flex-col{
-    flex-direction: column;
-  }
-
-  .xl\:items-end{
-    align-items: flex-end;
   }
 
   .xl\:items-center{
@@ -1390,10 +1214,6 @@ video {
     gap: 9rem;
   }
 
-  .xl\:gap-40{
-    gap: 10rem;
-  }
-
   .xl\:overflow-hidden{
     overflow: hidden;
   }
@@ -1402,68 +1222,12 @@ video {
     background-size: 180%;
   }
 
-  .xl\:bg-50\%{
-    background-size: 50%;
-  }
-
-  .xl\:bg-100\%{
-    background-size: 100%;
-  }
-
-  .xl\:bg-contain{
-    background-size: contain;
-  }
-
   .xl\:bg-auto{
     background-size: auto;
   }
 
-  .xl\:bg-\[bottom_5\%_left_10\%\]{
-    background-position: bottom 5% left 10%;
-  }
-
   .xl\:bg-\[top_53\%_left_12\%\]{
     background-position: top 53% left 12%;
-  }
-
-  .xl\:bg-\[bottom_-5\%_left_10\%\]{
-    background-position: bottom -5% left 10%;
-  }
-
-  .xl\:bg-\[bottom_-10\%_left_10\%\]{
-    background-position: bottom -10% left 10%;
-  }
-
-  .xl\:bg-\[bottom_-20\%_left_10\%\]{
-    background-position: bottom -20% left 10%;
-  }
-
-  .xl\:bg-\[top_-20\%_left_10\%\]{
-    background-position: top -20% left 10%;
-  }
-
-  .xl\:bg-\[top_20\%_left_10\%\]{
-    background-position: top 20% left 10%;
-  }
-
-  .xl\:bg-\[top_30\%_left_10\%\]{
-    background-position: top 30% left 10%;
-  }
-
-  .xl\:bg-\[top_50\%_left_10\%\]{
-    background-position: top 50% left 10%;
-  }
-
-  .xl\:bg-\[top_80\%_left_10\%\]{
-    background-position: top 80% left 10%;
-  }
-
-  .xl\:bg-\[top_80\%_left_50\%\]{
-    background-position: top 80% left 50%;
-  }
-
-  .xl\:bg-\[top_80\%_left_-10\%\]{
-    background-position: top 80% left -10%;
   }
 
   .xl\:bg-\[top_80\%_left_-40\%\]{
@@ -1475,26 +1239,6 @@ video {
     padding-right: 7rem;
   }
 
-  .xl\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
-  .xl\:py-40{
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
-  .xl\:py-32{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-
-  .xl\:py-36{
-    padding-top: 9rem;
-    padding-bottom: 9rem;
-  }
-
   .xl\:py-44{
     padding-top: 11rem;
     padding-bottom: 11rem;
@@ -1502,22 +1246,6 @@ video {
 
   .xl\:pl-56{
     padding-left: 14rem;
-  }
-
-  .xl\:pr-10{
-    padding-right: 2.5rem;
-  }
-
-  .xl\:pr-20{
-    padding-right: 5rem;
-  }
-
-  .xl\:pr-14{
-    padding-right: 3.5rem;
-  }
-
-  .xl\:pr-28{
-    padding-right: 7rem;
   }
 
   .xl\:text-left{
