@@ -1203,6 +1203,10 @@ video {
     margin-top: 20rem;
   }
 
+  .xl\:mt-96{
+    margin-top: 24rem;
+  }
+
   .xl\:flex{
     display: flex;
   }
@@ -1334,6 +1338,10 @@ video {
 
   .\32xl\:mt-44{
     margin-top: 11rem;
+  }
+
+  .\32xl\:mt-52{
+    margin-top: 13rem;
   }
 
   .\32xl\:w-900{
