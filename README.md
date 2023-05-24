@@ -20,7 +20,7 @@ Your users should be able to:
 ### Links
 
 [Blogr landing page Live URL](https://blogr-landing-page-toyy.onrender.com) <br>
-[Blogr landing page Solution URL](https://www.frontendmentor.io/solutions/faq-accordion-card-main-eoDiIoXndb) 
+[Blogr landing page Solution URL](https://www.frontendmentor.io/solutions/blogr-landing-page-XUJlEXr_V2) 
 
 ### Built with
 
